@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "siem-ops-manager"
+version = "0.1.0"
+description = "Python toolkit for SIEM operations and KPI collection (includes Cortex XSIAM support; broader SIEM coverage in development)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "SIEM Ops Team"}]
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+siem-ops-manager = "siem_ops_manager.cortex_xdr:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
