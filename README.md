@@ -20,7 +20,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<org>/siem-ops-manager.git
+   git clone https://github.com/GuilhermeArnhold/siem-ops-manager.git
    cd siem-ops-manager
    ```
 2. Create and activate a virtual environment:
